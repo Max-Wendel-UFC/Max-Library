@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+		<script src="../js/jquery.js"></script>
+		<script src="../js/animationCheckbox.js"></script>
+		<script src="../js/tooltip.js"></script>
+		<script src="../js/dialogModalUnchecked.js"></script>
+		<script src="../js/phoneMask.js"></script>
+		<script src="../js/jquery.maskedinput.js"></script>
+		<script src="../js/phoneMsk.js"></script>
+</head>
+<body>
+    <section id="main">
+        <header class="mainHeader">
+			<a href="../index.html"><img id="logo" src="../img/WEB-PAGE/logo.png" alt="Logo"></a>
+		</Header>
+        <nav class="mainNav">
+			<ul >
+				<li>
+					<a href="gallery.html#">Galeria de Livros</a>
+				</li>
+				<li>
+					<a href="form.html#">Cadastre-se</a>
+				</li>
+				<li>
+					<a href="about.html#">Sobre-nós</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- begin Form -->
+    <article class="mainContent">
+			<div class="container">
+				<form id="myForm" onsubmit="return validateForm()">
+				  <div class="row">
+						<div class="col-25">
+					  	<label for="fname">Nome</label>
+						</div>
+						<div class="col-75">
+					  	<input type="text" id="fname" name="firstname" placeholder="Nome..." title="Insira seu nome" required>
+						</div>
+					</div>
+				  <div class="row">
+						<div class="col-25">
+							<label for="lname">Sobrenome</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="phone" class="telefone" name="Telefone" placeholder="(99) 9 9999-9999" title="Insira seu telefone" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="lname">E-mail</label>
+						</div>
+						<div class="col-75">
+							<input type="email" id="email" name="email" placeholder="example@example.com..." title="Insira seu E-mail" required>
+						</div>
+					</div>  
+
+					<div id="checks" class="row FR">
+						<label>Receber notificações por E-mail<input id="spam" type="checkbox">
+						</label>
+						<label>Aceito os termos de uso <input id="termos" name="check" type="checkbox" required>
+						</label>
+					</div>
+
+					<div class="row">
+						<div class="col-25">
+						  <label for="Conte-nos">Conte-nos como você nos conheceu?</label>
+						</div>
+						<div class="col-25">
+						  <select id="rec" name="rec">
+								<option id="ss">Selecione</option>
+								<option id="s1" >Recomendação de um amigo(a)</option>
+								<option id="s2">Recomendação ou citação de sites, blog's, redes sociais, e etc</option>
+								<option id="s3">outra forma</option>
+						  </select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+						  <label for="subject">O que mais lhe atrai nos livros?</label>
+						</div>
+
+						<div class="col-75">
+						  <textarea id="subject" name="subject" placeholder="Escreva uma mensagem sobre..." style="height:100px"></textarea>
+						</div>
+					</div>
+
+					<div class="row">
+					<input id="submit" type="button" value="Submeter" title="Submeter">
+					</div>
+				</form>
+					<!-- end Form -->
+			</div>
+		</article>
+		
+		<footer class="mainFooter">
+			<h3>Contate-nos: +55 (89) 9 8998-5357</h3>
+			<p>Desenvolvido e criado por: Max Wendel</p>
+			<p>Ultima atualização: 23/05/2018</p>
+		</footer>
+    </section>
+</body>
+</html>
